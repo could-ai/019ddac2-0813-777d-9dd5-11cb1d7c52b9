@@ -5,7 +5,7 @@ import 'screens/splash/logo_screen.dart';
 import 'screens/splash/loading_screen.dart';
 import 'screens/auth/login_screen.dart';
 import 'screens/home/home_screen.dart';
-import 'screens/admin/admin_home.dart';
+import 'screens/home/admin_dashboard.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -44,7 +44,7 @@ class EZBattleRoleApp extends StatelessWidget {
         '/loading': (context) => const LoadingScreen(),
         '/login': (context) => const LoginScreen(),
         '/home': (context) => const HomeScreen(),
-        '/admin': (context) => const AdminHomeScreen(),
+        '/admin': (context) => const AdminDashboard(),
       },
     );
   }

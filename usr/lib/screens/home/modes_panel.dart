@@ -22,7 +22,7 @@ class ModesPanel extends StatelessWidget {
                 children: [
                   _buildModeList(),
                   const VerticalDivider(color: Colors.white24, width: 1),
-                  _buildMapSelection(),
+                  _buildMapSelection(context),
                 ],
               ),
             ),
@@ -85,7 +85,7 @@ class ModesPanel extends StatelessWidget {
     );
   }
 
-  Widget _buildMapSelection() {
+  Widget _buildMapSelection(BuildContext context) {
     // Prompt mentions 8 maps
     final maps = ['Bermuda', 'Purgatory', 'Kalahari', 'Alpine', 'NeXTerra', 'Nova', 'Cyber City', 'Desert Ruins'];
     
